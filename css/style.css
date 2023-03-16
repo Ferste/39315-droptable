@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Colores
+#021544 - letras
+#10BDED - botones
+#0D0B0B - footer
+#EDECEC - hosting
+#BEF0CB - color de fondo /empresa
+#C1AEFC - servicios
+#F6F7C1 - servicios
+
+
+font : 
+font-family: 'Poppins', sans-serif;
+*/
+
+header{
+    width: 100%;
+    height: 225px; /* tamaño real 99px pero sin posicion no era posible realizar las pruebas de enlace entre paginas*/
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+}
+
+.logo-marca a{
+    text-decoration: none;
+    color: #021544;
+
+}
+
+.navbar{
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none; 
+    color: #021544; 
+}
+
+.fondo-index{
+    position: relative;
+    text-align: center;
+} 
+
+.fondo-edificio{
+    height: 672px;
+    width: 100%;
+    
+}
+
+.fondo-contacto{
+    width: 100%;
+}
+
+.centrado h2 {
+    color: white;
+    font-weight: bold;
+    text-shadow: rgb(30, 30, 30);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+main, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.servicios{
+    color: #021544;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.servicios div{
+    padding: 25px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow:5px 5px 15px gray;
+    height: 330px;
+    width: 330px;
+}
+
+.servicios div a {
+    padding: 5px;
+    border-radius: 12px;
+    background-color:#10BDED;
+    text-decoration: none;
+    margin:10px;
+    color: white;
+    font-weight: bold;
+}
+
+.empresas img{
+    height: 114px;
+    width: 114px;
+    margin: 35px;
+}
+
+.hosting {
+    background-color: #EDECEC;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow:5px 5px 15px gray;
+    width: 1206px;
+    height: 461px;
+    display: inline-block;
+    color: #021544;
+}
+.hosting h2 {
+    text-align: center;
+}
+
+.formulario h2{
+    color: #021544;
+}
+
+.formulario hr{
+    background-color: #10BDED;
+    height: 4px;
+    border-radius: 35%;
+    width: 269px;
+}
+
+.boton{
+    color:white;
+    background-color: #10BDED;
+    border-radius: 2px;
+}
+
+.info-empresa {
+    color: #021544;
+    padding: 35px;
+    background-color: #BEF0CB;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:5px 5px 15px gray;
+}
+
+.info-empresa p{
+    color: black;
+}
+
+.desarrollo-web {
+    padding: 35px;
+    background-color: #F6F7C1;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:5px 5px 15px gray;
+}
+
+.consultoria {
+    padding: 35px;
+    background-color: #C1AEFC;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:5px 5px 15px gray;
+}
+
+.marketing-digital {
+    padding: 35px;
+    background-color:#BEF0CB;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:5px 5px 15px gray;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+
+.navbar-footer{
+    list-style: none;
+}
+
+.navbar-footer li a{
+    text-decoration: none; 
+    color: white; 
+}
+
+.derechos {
+    padding: 10px;
+    background-color: #171313;
+    text-align: center;
+}
