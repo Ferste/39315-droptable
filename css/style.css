@@ -119,14 +119,13 @@ main, footer {
 
 .formulario h2{
     color: #021544;
+    border-style: none none solid none;
+    border-width: 5px;
+    border-color: #10BDED;
+    text-align: center;
 }
 
-.formulario hr{
-    background-color: #10BDED;
-    height: 4px;
-    border-radius: 35%;
-    width: 269px;
-}
+
 
 .boton{
     color:white;
