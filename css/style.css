@@ -20,16 +20,23 @@ font-family: 'Poppins', sans-serif;
 
 header{
     width: 100%;
-    height: 99px; /* tamaño real 99px pero sin posicion no era posible realizar las pruebas de enlace entre paginas*/
+    height: 85px; /* tamaño real 99px pero sin posicion no era posible realizar las pruebas de enlace entre paginas*/
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 
-.logo-marca a{
-    text-decoration: none;
+.container header ul li a{
     color: #021544;
-
 }
+
+.container header a span{
+    color: #021544;
+}
+
+.container header a span{
+    color: #021544;
+}
+
 
 .navbar{
     list-style: none;
@@ -41,13 +48,13 @@ header{
 }
 
 .fondo-index{
-    position: relative;
     text-align: center;
 } 
 
 .fondo-edificio{
     height: 672px;
     width: 100%;
+    margin-bottom: -8%;
     
 }
 
@@ -72,14 +79,28 @@ main, footer {
 }
 
 .servicios{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "item1 item2 item3";
+    justify-items: center;
     color: #021544;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+
 .servicios div{
     padding: 25px;
-    margin: 10px;
     border-radius: 12px;
     background-color: white;
     box-shadow:5px 5px 15px gray;
