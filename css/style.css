@@ -25,7 +25,7 @@ header{
     font-weight:bold;
 }
 
-nav{
+.navbar{
     height: 80px;
     width: 100%;
 }
@@ -42,16 +42,16 @@ nav{
     font-size: 31px;
 }
 
-nav ul{
+.navbar ul{
     float: right;
     margin-right: 50px;
 }
-nav ul li{
+.navbar ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-nav ul li a{
+.navbar ul li a{
     color: #021544;
     font-size: 18px;
     padding: 7px 15px;
@@ -78,20 +78,20 @@ li a:hover{
 
 
 @media (max-width: 1024px){
-    nav ul{
+    .navbar ul{
         margin-right: 30px;
     }
     .enlace{
         padding-left: 30px;
     }
-    nav ul li a{
+    .navbar ul li a{
         font-size: 16px;
         padding: 0px 5px;
     }
 }
 
 @media (max-width: 900px){
-    nav ul{
+    .navbar ul{
         margin-right: 20px;
     }
     .enlace{
@@ -113,12 +113,12 @@ li a:hover{
         text-align: center;
         transition: all .5s;
     }
-    nav ul li{
+    .navbar ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    nav ul li a{
+    .navbar ul li a{
         font-size: 20px;
     }
 
@@ -204,12 +204,16 @@ main, footer {
     text-align: center;
 }
 
+.formulario {
+    text-align: center;
+}
+
 .formulario h2{
     color: #021544;
     border-style: none none solid none;
     border-width: 5px;
     border-color: #10BDED;
-    text-align: center;
+    display: inline-block;
 }
 
 
