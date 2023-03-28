@@ -10,21 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- Logo empresa -->
-        <div class="logo-marca">
-            <a href="index.html">
-                <img src="./assets/img/logos/logo.png" alt="LogoMarca">
-                <h1>DropTable</h1>
-            </a>
-        </div>
-        <!-- Barra de navegacion -->
         <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html" class="enlace"> 
+                <img src="./assets/img/logos/logo.png" alt="LogoMarca" class="logo"> 
+                <h1>DropTable</h1>   
+            </a> 
+            <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/servicios.html">Servicios</a></li>
                 <li><a href="./pages/proyectos.html">Proyectos</a></li>
                 <li><a href="./pages/empresa.html">Empresa</a></li>

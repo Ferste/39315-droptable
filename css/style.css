@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 /*
 Colores
@@ -17,29 +19,114 @@ Colores
 font : 
 font-family: 'Poppins', sans-serif;
 */
-
+/********************* barra de navegacion  *****************/
 header{
-    width: 100%;
-    height: 99px; /* tamaño real 99px pero sin posicion no era posible realizar las pruebas de enlace entre paginas*/
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 
-.logo-marca a{
-    text-decoration: none;
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 80px;
     color: #021544;
-
+    
 }
 
-.navbar{
-    list-style: none;
+.enlace h1{
+    position: absolute;
+    display: inline-block;
+    font-size: 31px;
 }
 
-.navbar li a{
-    text-decoration: none; 
-    color: #021544; 
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #021544;
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 3px;
 }
 
+li a:hover{
+    background:#18beeba7;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #021544;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 1024px){
+    nav ul{
+        margin-right: 30px;
+    }
+    .enlace{
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+}
+
+@media (max-width: 900px){
+    nav ul{
+        margin-right: 20px;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #EDECEC;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/*********************   *****************/
 .fondo-index{
     position: relative;
     text-align: center;
