@@ -19,31 +19,85 @@ Colores
 font : 
 font-family: 'Poppins', sans-serif;
 */
-
+/********************* barra de navegacion  *****************/
 header{
-    width: 100%;
-    height: 99px; /* tamaño real 99px pero sin posicion no era posible realizar las pruebas de enlace entre paginas*/
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 80px;
+    color: #021544;
     
 }
 
-.logo-marca a{
-    text-decoration: none;
+.enlace h1{
+    position: absolute;
+    display: inline-block;
+    font-size: 31px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
     color: #021544;
-
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 3px;
 }
 
-.navbar{
-    list-style: none;
+li a:hover{
+    background:#18beeba7;
+    transition: .5s;
 }
 
-.navbar li a{
-    text-decoration: none; 
-    color: #021544; 
+.checkbtn{
+    font-size: 30px;
+    color: #021544;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
-/*************************Barra de navegacion**************/
+
+@media (max-width: 1024px){
+    nav ul{
+        margin-right: 30px;
+    }
+    .enlace{
+        padding-left: 30px;
+    }
+    nav ul li a{
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+}
+
+@media (max-width: 900px){
+    nav ul{
+        margin-right: 20px;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+}
 
 @media (max-width: 768px){
     .checkbtn{
@@ -74,11 +128,14 @@ header{
 }
 /*********************   *****************/
 .fondo-index{
+    position: relative;
     text-align: center;
 } 
 
 .fondo-edificio{
+    height: 672px;
     width: 100%;
+    
 }
 
 .fondo-contacto{
@@ -102,28 +159,14 @@ main, footer {
 }
 
 .servicios{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "item1 item2 item3";
-    justify-items: center;
     color: #021544;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
-.item1{
-    grid-area: item1;
-}
-.item2{
-    grid-area: item2;
-}
-.item3{
-    grid-area: item3;
-}
-
 .servicios div{
     padding: 25px;
+    margin: 10px;
     border-radius: 12px;
     background-color: white;
     box-shadow:5px 5px 15px gray;
@@ -233,6 +276,3 @@ footer{
     background-color: #171313;
     text-align: center;
 }
-
-
-
