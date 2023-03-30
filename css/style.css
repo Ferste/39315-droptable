@@ -193,9 +193,10 @@ main, footer {
 .hosting {
     background-color: #EDECEC;
     padding: 25px;
+    margin: 0% 5%;
     border-radius: 12px;
     box-shadow:5px 5px 15px gray;
-    width: 1206px;
+    width: 90%;
     height: 461px;
     display: inline-block;
     color: #021544;
@@ -260,23 +261,60 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
-
-footer{
-    color: white;
+/* ****************  footer  ************* */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
     background-color: black;
+    color: white;
+    padding-top: 40px;
 }
 
-.navbar-footer{
-    list-style: none;
+.redes {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar-footer li a{
-    text-decoration: none; 
-    color: white; 
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 0px 0px;
+}
+
+footer h4 {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+footer p {
+    line-height: 2;
+    font-weight: bold;
+}
+
+footer .navbar-footer li {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+footer .navbar-footer li a {
+    color: white;
+    font-weight: bold;
 }
 
 .derechos {
-    padding: 10px;
-    background-color: #171313;
+    grid-column: 1 / -1;
+    font-size: 16px;
+    margin-top: 40px;
     text-align: center;
+    background-color: #171313;
+    padding: 20px;
 }
