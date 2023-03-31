@@ -43,37 +43,40 @@
             <!-- contacto -->
             <div class="formulario">
                 <h2>CONTÁCTENOS</h2>
-                <h3>Realizanos una consulta o solicitá presupuesto utilizando el siguiente formulario.<br>
-                    A la brevedad nos pondremos en contacto.</h3> 
+                <h3>Realizanos una consulta o solicitá presupuesto utilizando el siguiente formulario. A la brevedad nos pondremos en contacto.</h3>
                 <form action="" method="post">
+                    <div class="nombre-apellido">
+                        <fieldset>
+                            <label for="nombre">
+                                <span>Nombre:</span>
+                                <input type="text" id="nombre" placeholder="Nombre" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="apellido">
+                                <span>Apellido:</span>
+                                <input type="text" id="apellido" placeholder="Apellido" required>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="email-telefono">
+                        <fieldset>
+                            <label for="email">
+                                <span>Email:</span>
+                                <input type="email" id="email" placeholder="Email" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="telefono">
+                                <span>Teléfono:</span>
+                                <input type="number" id="telefono" placeholder="Teléfono" required>
+                            </label>
+                        </fieldset>
+                    </div>
                     <fieldset>
-                        <label for="nombre">
-                            <span>Nombre:</span>
-                            <input type="text" id="nombre" placeholder="Nombre" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Apellido">
-                            <span>Apellido:</span>
-                            <input type="text" id="Apellido" placeholder="Apellido" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Email">
-                            <span>Email:</span>
-                            <input type="email" id="Email" placeholder="Email" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Telefono">
-                            <span>Telefono:</span>
-                            <input type="number" id="Telefono" placeholder="Telefono" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Consulta">
+                        <label for="consulta">
                             <span>Consulta:</span>
-                            <input type="text" id="Consulta" placeholder="Consulta" required>
+                            <textarea id="consulta" placeholder="Consulta" required></textarea>
                         </label>
                     </fieldset>
                     <input class="boton" type="submit">
