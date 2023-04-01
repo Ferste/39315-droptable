@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 /*
 Colores
@@ -12,85 +14,85 @@ Colores
 #BEF0CB - color de fondo /empresa
 #C1AEFC - servicios
 #F6F7C1 - servicios
-
-
 font : 
 font-family: 'Poppins', sans-serif;
 */
 
 
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+/********************* barra de navegacion  *****************/
+header{
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
-    
 }
 
-.logo-marca a{
-    display: flex;
-    align-items: center;
+.navbar{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 15px 80px;
     color: #021544;
-    font-size: 25px;
-    text-decoration: none;
     
 }
 
-.titulo {
-    font-weight:bold;
+.enlace h1{
+    position: absolute;
+    display: inline-block;
+    font-size: 31px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    
+.navbar ul{
+    float: right;
+    margin-right: 50px;
 }
-.navbar li {
-    margin: 0 25px;
-    
+.navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+.navbar ul li a{
     color: #021544;
-
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 3px;
 }
 
-@media (max-width: 768px) {
-    nav {
-    flex-direction: column;
-    }
-
-    .navbar {
-    margin-top: 20px;
-    }
-
-    .navbar li {
-    margin: 10px 0;
-    }
+li a:hover{
+    background:#18beeba7;
+    transition: .5s;
 }
 
-/*************************Barra de navegacion**************/
+.checkbtn{
+    font-size: 30px;
+    color: #021544;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/********************************************  index *****************************************/
+
+
+
+
 
 .fondo-index{
+    position: relative;
     text-align: center;
 } 
 
 .fondo-edificio{
+    height: 672px;
     width: 100%;
 }
 
-.fondo-contacto{
-    width: 100%;
-}
 
 .centrado h2 {
     color: white;
@@ -101,7 +103,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 main, footer {
@@ -109,28 +111,14 @@ main, footer {
 }
 
 .servicios{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "item1 item2 item3";
-    justify-items: center;
     color: #021544;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
-.item1{
-    grid-area: item1;
-}
-.item2{
-    grid-area: item2;
-}
-.item3{
-    grid-area: item3;
-}
-
 .servicios div{
     padding: 25px;
+    margin: 10px;
     border-radius: 12px;
     background-color: white;
     box-shadow:5px 5px 15px gray;
@@ -155,33 +143,279 @@ main, footer {
 }
 
 .hosting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hosting h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .hosting-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #EDECEC;
     padding: 25px;
+    margin: 0% 5%;
     border-radius: 12px;
     box-shadow:5px 5px 15px gray;
-    width: 1206px;
+    width: 90%;
     height: 461px;
-    display: inline-block;
     color: #021544;
-}
-.hosting h2 {
-    text-align: center;
+  }
+  
+  .hosting-info {
+    flex-basis: 50%;
+    padding-right: 2rem;
+  }
+  
+  .hosting-img {
+    flex-basis: 50%;
+    padding-left: 2rem;
+  }
+  
+  .hosting-img img {
+    max-width: 100%;
+  }
+
+
+/* ****************  responsive  ************* */
+@media (max-width: 1024px){
+    .navbar ul{
+        margin-right: 30px;
+    }
+    .enlace{
+        padding-left: 30px;
+    }
+    .navbar ul li a{
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+    .fondo-edificio{
+        height: 500px;
+    }
+    .centrado h2 {
+        font-size: 25px;
+    }
 }
 
+@media (max-width: 900px){
+    .navbar ul{
+        margin-right: 20px;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    .fondo-edificio{
+        height: 400px;
+    }
+    .centrado h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #EDECEC;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+/* 
+.formulario {
+    text-align: center;
+}
 .formulario h2{
     color: #021544;
     border-style: none none solid none;
     border-width: 5px;
     border-color: #10BDED;
-    text-align: center;
+    display: inline-block;
 }
-
-
-
 .boton{
     color:white;
     background-color: #10BDED;
     border-radius: 2px;
+} */
+
+/* *****************   contacto  ************* */
+
+
+.fondo-contacto{
+    width: 100%;
+}
+
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario h3 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.formulario label span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.formulario .nombre-apellido fieldset {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario .email-telefono fieldset {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.formulario .email-telefono label {
+    margin-top: 28px;
+}
+
+.formulario textarea {
+    height: 150px;
+}
+
+.formulario .boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.formulario .boton:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilos para el botón de envío */
+
+.boton-enviar {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color:#10BDED ;
+}
+
+  /* Estilos para hacer el formulario responsive */
+@media (max-width: 768px) {
+    .formulario {
+    max-width: 100%;
+    padding: 1rem;
+    }
+}
+
+  /* Estilos para el botón de envío */
+
+.boton-enviar {
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #3e8e41;
+}
+
+  /* Estilos para hacer el formulario responsive */
+
+@media (max-width: 768px) {
+    .formulario {
+    max-width: 100%;
+    padding: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    }
+
+    .boton-enviar {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.5rem;
+    }
 }
 
 .info-empresa {
@@ -220,26 +454,60 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
-
-footer{
-    color: white;
+/* ****************  footer  *************
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
     background-color: black;
+    color: white;
+    padding-top: 40px;
 }
 
-.navbar-footer{
-    list-style: none;
+.redes {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar-footer li a{
-    text-decoration: none; 
-    color: white; 
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px 0px 0px;
+}
+
+footer h4 {
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+footer p {
+    line-height: 2;
+    font-weight: bold;
+}
+
+footer .navbar-footer li {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+footer .navbar-footer li a {
+    color: white;
+    font-weight: bold;
 }
 
 .derechos {
-    padding: 10px;
-    background-color: #171313;
+    grid-column: 1 / -1;
+    font-size: 16px;
+    margin-top: 40px;
     text-align: center;
-}
-
-
-
+    background-color: #171313;
+    padding: 20px 0px;
+} */

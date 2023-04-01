@@ -9,19 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo-marca">
-                <a href="../index.html"> 
-                    <img src="../assets/img/logos/logo.png" alt="LogoMarca"> 
-                <h1 class="titulo">DropTable</h1>   
-                </a> 
-            </div>
-            <ul class="navbar">
+        <!-- Logo empresa -->
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="../index.html" class="enlace"> 
+                <img src="../assets/img/logos/logo.png" alt="LogoMarca" class="logo"> 
+                <h1>DropTable</h1>   
+            </a> 
+            <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/servicios.html">Servicios</a></li>
                 <li><a href="../pages/proyectos.html">Proyectos</a></li>
@@ -40,37 +43,40 @@
             <!-- contacto -->
             <div class="formulario">
                 <h2>CONTÁCTENOS</h2>
-                <h3>Realizanos una consulta o solicitá presupuesto utilizando el siguiente formulario.<br>
-                    A la brevedad nos pondremos en contacto.</h3> 
+                <h3>Realizanos una consulta o solicitá presupuesto utilizando el siguiente formulario. A la brevedad nos pondremos en contacto.</h3>
                 <form action="" method="post">
+                    <div class="nombre-apellido">
+                        <fieldset>
+                            <label for="nombre">
+                                <span>Nombre:</span>
+                                <input type="text" id="nombre" placeholder="Nombre" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="apellido">
+                                <span>Apellido:</span>
+                                <input type="text" id="apellido" placeholder="Apellido" required>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="email-telefono">
+                        <fieldset>
+                            <label for="email">
+                                <span>Email:</span>
+                                <input type="email" id="email" placeholder="Email" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="telefono">
+                                <span>Teléfono:</span>
+                                <input type="number" id="telefono" placeholder="Teléfono" required>
+                            </label>
+                        </fieldset>
+                    </div>
                     <fieldset>
-                        <label for="nombre">
-                            <span>Nombre:</span>
-                            <input type="text" id="nombre" placeholder="Nombre" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Apellido">
-                            <span>Apellido:</span>
-                            <input type="text" id="Apellido" placeholder="Apellido" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Email">
-                            <span>Email:</span>
-                            <input type="email" id="Email" placeholder="Email" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Telefono">
-                            <span>Telefono:</span>
-                            <input type="number" id="Telefono" placeholder="Telefono" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="Consulta">
+                        <label for="consulta">
                             <span>Consulta:</span>
-                            <input type="text" id="Consulta" placeholder="Consulta" required>
+                            <textarea id="consulta" placeholder="Consulta" required></textarea>
                         </label>
                     </fieldset>
                     <input class="boton" type="submit">
