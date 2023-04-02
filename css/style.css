@@ -20,15 +20,16 @@ font-family: 'Poppins', sans-serif;
 
 
 /********************* barra de navegacion  *****************/
-header{
+.hea-der{
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
 
-.navbar{
+.nav-bar{
     height: 80px;
     width: 100%;
 }
+
 .enlace{
     position: absolute;
     padding: 15px 80px;
@@ -40,22 +41,27 @@ header{
     position: absolute;
     display: inline-block;
     font-size: 31px;
+    font-weight:bold;
+    padding: 5px 0px 0px 0px;
 }
 
-.navbar ul{
+.nav-bar ul{
     float: right;
     margin-right: 50px;
+    
 }
-.navbar ul li{
+.nav-bar ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    
 }
-.navbar ul li a{
+.nav-bar ul li a{
     color: #021544;
     font-size: 18px;
     padding: 7px 15px;
     border-radius: 3px;
+    text-decoration: none;
 }
 
 li a:hover{
@@ -167,32 +173,40 @@ main, footer {
     width: 90%;
     height: 461px;
     color: #021544;
-  }
-  
-  .hosting-info {
+}
+
+.hosting-info {
     flex-basis: 50%;
     padding-right: 2rem;
-  }
-  
-  .hosting-img {
+}
+
+.hosting-img {
     flex-basis: 50%;
     padding-left: 2rem;
-  }
-  
-  .hosting-img img {
+}
+
+.hosting-img img {
     max-width: 100%;
-  }
+}
+
+  /* *****************   contacto  ************* */
+
+
+.fondo-contacto{
+    width: 100%;
+}
+
 
 
 /* ****************  responsive  ************* */
 @media (max-width: 1024px){
-    .navbar ul{
+    .nav-bar ul{
         margin-right: 30px;
     }
     .enlace{
         padding-left: 30px;
     }
-    .navbar ul li a{
+    .nav-bar ul li a{
         font-size: 16px;
         padding: 0px 5px;
     }
@@ -205,7 +219,7 @@ main, footer {
 }
 
 @media (max-width: 900px){
-    .navbar ul{
+    .nav-bar ul{
         margin-right: 20px;
     }
     .enlace{
@@ -233,12 +247,12 @@ main, footer {
         text-align: center;
         transition: all .5s;
     }
-    .navbar ul li{
+    .nav-bar ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    .navbar ul li a{
+    .nav-bar ul li a{
         font-size: 20px;
     }
     #check:checked ~ ul{
@@ -247,176 +261,6 @@ main, footer {
 }
 
 
-/* 
-.formulario {
-    text-align: center;
-}
-.formulario h2{
-    color: #021544;
-    border-style: none none solid none;
-    border-width: 5px;
-    border-color: #10BDED;
-    display: inline-block;
-}
-.boton{
-    color:white;
-    background-color: #10BDED;
-    border-radius: 2px;
-} */
-
-/* *****************   contacto  ************* */
-
-
-.fondo-contacto{
-    width: 100%;
-}
-
-
-.formulario {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.formulario h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.formulario h3 {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.formulario fieldset {
-    margin-bottom: 20px;
-    border: none;
-}
-
-.formulario label span {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="number"],
-.formulario textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-.formulario .nombre-apellido fieldset {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.formulario .email-telefono fieldset {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.formulario .email-telefono label {
-    margin-top: 28px;
-}
-
-.formulario textarea {
-    height: 150px;
-}
-
-.formulario .boton {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.formulario .boton:hover {
-    background-color: #3e8e41;
-}
-
-/* Estilos para el botón de envío */
-
-.boton-enviar {
-    display: block;
-    margin: 0 auto;
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 3px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.boton-enviar:hover {
-    background-color:#10BDED ;
-}
-
-  /* Estilos para hacer el formulario responsive */
-@media (max-width: 768px) {
-    .formulario {
-    max-width: 100%;
-    padding: 1rem;
-    }
-}
-
-  /* Estilos para el botón de envío */
-
-.boton-enviar {
-    display: block;
-    margin: 0 auto;
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 3px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.boton-enviar:hover {
-    background-color: #3e8e41;
-}
-
-  /* Estilos para hacer el formulario responsive */
-
-@media (max-width: 768px) {
-    .formulario {
-    max-width: 100%;
-    padding: 1rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea {
-    font-size: 0.8rem;
-    padding: 0.4rem;
-    }
-
-    .boton-enviar {
-    font-size: 0.9rem;
-    padding: 0.4rem 1.5rem;
-    }
-}
 
 .info-empresa {
     color: #021544;
@@ -511,6 +355,8 @@ footer .navbar-footer li a {
     background-color: #171313;
     padding: 20px 0px;
 } */
+
+
 
 
 
