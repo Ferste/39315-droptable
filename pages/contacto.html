@@ -35,7 +35,7 @@
     </header>
     <main>
         <section>
-            <div >
+            <div class="backgr-conta">
                 <img class="fondo-contacto" src="../assets/img/Fondos/fondo-contacto.png" alt="imagen en oficinas">
             </div>
         </section>
@@ -46,33 +46,28 @@
                 <h3>Realizanos una consulta o solicitá presupuesto utilizando el siguiente formulario. A la brevedad nos pondremos en contacto.</h3>
                 <div class="container">
                     <form class="row g-3" action="" method="post">
-                        
-                            <fieldset class="col-6">
+                            <fieldset class="col-md-6 col-sm-12 ">
                                 <label for="nombre" class="form-label"></label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                                
+                                <input type="text" class="form-control border-dark-subtle bg-light " id="nombre" placeholder="Nombre" required>
                             </fieldset>
-                            <fieldset class="col-6">
+                            <fieldset class="col-md-6 col-sm-12">
                                 <label for="apellido" class="form-label"></label>
-                                <input type="text"  class="form-control" id="apellido" placeholder="Apellido" required>
-                                
+                                <input type="text"  class="form-control border-dark-subtle bg-light" id="apellido" placeholder="Apellido" required>
                             </fieldset>
-                            <fieldset class="col-6">
+                            <fieldset class="col-md-6 col-sm-12">
                                 <label for="email" class="form-label"></label>
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                
+                                <input type="email" class="form-control border-dark-subtle bg-light" id="email" placeholder="Email" required>
                             </fieldset>
-                            <fieldset class="col-6">
+                            <fieldset class="col-md-6 col-sm-12">
                                 <label for="telefono" class="form-label"></label>
-                                <input type="number"  class="form-control" id="telefono" placeholder="Teléfono" required>
-                                
+                                <input type="number"  class="form-control border-dark-subtle bg-light" id="telefono" placeholder="Teléfono" required>
                             </fieldset>
-                        <fieldset class="col-12">
+                        <fieldset class="col-12" >
                             <label for="consulta" class="form-label"></label>
-                            <input id="consulta" class="form-control" placeholder="Consulta" required></input>
+                            <textarea id="consulta" class="form-control col-12 border-dark-subtle bg-light " placeholder="Consulta" rows="5" required></textarea>
                         </fieldset>
-                        <div class="d-grid gap-2 col-2 mx-auto">
-                            <button type="submit" class="btn btn-info ">enviar</button>
+                        <div class="d-grid gap-2 col-2  mx-auto">
+                            <button type="submit" class="btn btn-info text-white">enviar</button>
                         </div>
                     </form>
                 </div>
@@ -80,49 +75,53 @@
         </section>
     </main>
     <!-- Pie de pagina -->
-    <footer>
-        <div>
-            <h4>DROPTABLE </h4>
-            <p>DROPTABLE es un estudio<br>
-                de diseño y desarrollos WEB de Argentina.<br>
-                Contamos con más de 15 años de<br>
-                experiencia brindando servicios a<br>
-                pequeñas y medianas empresas<br>
-                nacionales e internacionales<br>
-                como ser de Perú, Estados Unidos,<br>
-                Canadá y España.</p>
+    <footer class="pie-pagina">
+        <div class="fot-1" >
+            <div class="area">
+                <h4>DROPTABLE </h4>
+                <p>DROPTABLE es un estudio<br>
+                    de diseño y desarrollos WEB de Argentina.<br>
+                    Contamos con más de 15 años de<br>
+                    experiencia brindando servicios a<br>
+                    pequeñas y medianas empresas<br>
+                    nacionales e internacionales<br>
+                    como ser de Perú, Estados Unidos,<br>
+                    Canadá y España.</p>
+            </div>
+            <div class="area">
+                <h4 class="mapa">Mapa sitio</h4>
+                <ul class="navbar-footer">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="../pages/empresa.html">Empresa</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="area">
+                <h4>Contactos:</h4>
+                <p>(219) 555-0114<br>
+                    comercial@droptable.com<br>
+                    4517 Washington Ave., Kentucky 39495
+                </p>
+                <h4>Nuestras redes</h4>
+                <div class="redes">
+                    <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../assets/img/logos/whatsapp.png"
+                        alt="whatsapp"></a>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.png"
+                        alt="facebook"></a>
+                <a href="https://ar.linkedin.com/" target="_blank"><img src="../assets/img/logos/linkedin.png"
+                        alt="linkedin"></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logos/twitter.png"
+                        alt="twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.png"
+                        alt="instagram"></a>
+                </div>
+            </div>
         </div>
-        <div>
-            <h4>Mapa sitio</h4>
-            <ul class="navbar-footer">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/proyectos.html">Proyectos</a></li>
-                <li><a href="../pages/empresa.html">Empresa</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <div class="fot-2">
+            <h3 class="derechos"> Todos los derechos reservados © DropTable S.R.L.</h3>
         </div>
-        <div>
-            <h4>Contactos:</h4>
-            <p>(219) 555-0114<br>
-                comercial@droptable.com<br>
-                4517 Washington Ave., Kentucky 39495
-            </p>
-        </div>
-        <div>
-            <h4>Nuestras redes</h4>
-            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../assets/img/logos/whatsapp.png"
-                    alt="whatsapp"></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.png"
-                    alt="facebook"></a>
-            <a href="https://ar.linkedin.com/" target="_blank"><img src="../assets/img/logos/linkedin.png"
-                    alt="linkedin"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logos/twitter.png"
-                    alt="twitter"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.png"
-                    alt="instagram"></a>
-        </div>
-        <h3 class="derechos"> Todos los derechos reservados © DropTable S.R.L.</h3>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>

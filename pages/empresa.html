@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
 </head>
 <body>
-    <header>
+    <header class="hea-der">
         <!-- Logo empresa -->
-        <nav class="navbar">
+        <nav class="nav-bar">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
@@ -42,68 +43,71 @@
                 <!-- acerca de DropTable -->
                 <div class="formulario">
                     <h2>Acerca de DropTable</h2>
-                </div>
-                
-                <div class="info-empresa">
-                    
-                    <h3>DROPTABLE</h3><span></span> <p>es un estudio de diseño y desarrollos WEB de Argentina.
+                    <div class="info-empresa">
+                        <h3>DROPTABLE</h3>
+                        <p>DROPTABLE es un estudio de diseño y desarrollos WEB de Argentina.
                         Contamos con más de 15 años de experiencia brindando servicios a pequeñas y medianas empresas nacionales e internacionales como ser de Perú, Estados Unidos, Canadá y España.
                         Nos encargamos de que la inteligencia digital se adapte a tu empresa para agilizar procesos que aumenten la productividad y las ventas. También desarrollamos apps móviles multiplataforma para que tus proyectos se acomoden a todos los celulares existentes.
-                    </p>
-                    <h3>SITIOS Y TIENDAS RESPONSIVE</h3>
-                    <p>Nuestros Sitios Web, Tiendas Online y Revistas Digitales se suman a la tendencia tablet and mobile first. Diseños funcionales y autoadministrables para que puedas operar con total independencia.</p>
-                    <h3>AGENCIA SEO</h3>
-                    <p>Nuestros profesionales cuentan con una considerable trayectoria en Posicionamiento Web (SEO). Ejemplos concretos de éxito pueden corroborar su idoneidad. Marketing de contenidos, link building, posicionamiento SEM, auditoría, consultoría y performance se unen para brindarte uno de los servicios más distintivos de la era digital.</p>
-                    <h3>GOOGLE ADS Y SOCIAL NETWORK</h3>
-                    <p>Nuestra agencia es Google Partner y Facebook Agency. Contamos con especialistas en AdWords Search, Display y Analytics Certified. Además, trabajamos con profesionales en Social Network (Redes Sociales) con amplia experiencia en anuncios integrados de Facebook e Instagram con WhatsApp Business.</p>
-                    <button ><a class="boton" href="../pages/contacto.html">CONTACTO</a></button>
+                        </p>
+                        <h3>SITIOS Y TIENDAS RESPONSIVE</h3>
+                        <p>Nuestros Sitios Web, Tiendas Online y Revistas Digitales se suman a la tendencia tablet and mobile first. Diseños funcionales y autoadministrables para que puedas operar con total independencia.</p>
+                        <h3>AGENCIA SEO</h3>
+                        <p>Nuestros profesionales cuentan con una considerable trayectoria en Posicionamiento Web (SEO). Ejemplos concretos de éxito pueden corroborar su idoneidad. Marketing de contenidos, link building, posicionamiento SEM, auditoría, consultoría y performance se unen para brindarte uno de los servicios más distintivos de la era digital.</p>
+                        <h3>GOOGLE ADS Y SOCIAL NETWORK</h3>
+                        <p>Nuestra agencia es Google Partner y Facebook Agency. Contamos con especialistas en AdWords Search, Display y Analytics Certified. Además, trabajamos con profesionales en Social Network (Redes Sociales) con amplia experiencia en anuncios integrados de Facebook e Instagram con WhatsApp Business.</p>
+                        <button class="btn btn-info"  ><a  href="../pages/contacto.html">CONTACTO</a></button>
+                    </div>
                 </div>
             </section>
     </main>
         <!-- Pie de pagina -->
-        <footer>
-            <div>
-                <h4>DROPTABLE </h4>
-                <p>DROPTABLE es un estudio<br>
-                    de diseño y desarrollos WEB de Argentina.<br>
-                    Contamos con más de 15 años de<br>
-                    experiencia brindando servicios a<br>
-                    pequeñas y medianas empresas<br>
-                    nacionales e internacionales<br>
-                    como ser de Perú, Estados Unidos,<br>
-                    Canadá y España.</p>
+        <footer class="pie-pagina">
+            <div class="fot-1" >
+                <div class="area">
+                    <h4>DROPTABLE </h4>
+                    <p>DROPTABLE es un estudio<br>
+                        de diseño y desarrollos WEB de Argentina.<br>
+                        Contamos con más de 15 años de<br>
+                        experiencia brindando servicios a<br>
+                        pequeñas y medianas empresas<br>
+                        nacionales e internacionales<br>
+                        como ser de Perú, Estados Unidos,<br>
+                        Canadá y España.</p>
+                </div>
+                <div class="area">
+                    <h4 class="mapa">Mapa sitio</h4>
+                    <ul class="navbar-footer">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/servicios.html">Servicios</a></li>
+                        <li><a href="../pages/proyectos.html">Proyectos</a></li>
+                        <li><a href="../pages/empresa.html">Empresa</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="area">
+                    <h4>Contactos:</h4>
+                    <p>(219) 555-0114<br>
+                        comercial@droptable.com<br>
+                        4517 Washington Ave., Kentucky 39495
+                    </p>
+                    <h4>Nuestras redes</h4>
+                    <div class="redes">
+                        <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../assets/img/logos/whatsapp.png"
+                            alt="whatsapp"></a>
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><img src="../assets/img/logos/linkedin.png"
+                            alt="linkedin"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logos/twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.png"
+                            alt="instagram"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Mapa sitio</h4>
-                <ul class="navbar-footer">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="../pages/empresa.html">Empresa</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+            <div class="fot-2">
+                <h3 class="derechos"> Todos los derechos reservados © DropTable S.R.L.</h3>
             </div>
-            <div>
-                <h4>Contactos:</h4>
-                <p>(219) 555-0114<br>
-                    comercial@droptable.com<br>
-                    4517 Washington Ave., Kentucky 39495
-                </p>
-            </div>
-            <div>
-                <h4>Nuestras redes</h4>
-                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../assets/img/logos/whatsapp.png"
-                        alt="whatsapp"></a>
-                <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logos/facebook.png"
-                        alt="facebook"></a>
-                <a href="https://ar.linkedin.com/" target="_blank"><img src="../assets/img/logos/linkedin.png"
-                        alt="linkedin"></a>
-                <a href="https://twitter.com/?lang=es" target="_blank"><img src="../assets/img/logos/twitter.png"
-                        alt="twitter"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logos/instagram.png"
-                        alt="instagram"></a>
-            </div>
-            <h3 class="derechos"> Todos los derechos reservados © DropTable S.R.L.</h3>
         </footer>
 </body>
 </html>
