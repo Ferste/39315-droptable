@@ -156,7 +156,7 @@ li a:hover{
 .centrado h2 {
     color: white;
     font-weight: bold;
-    text-shadow: rgb(30, 30, 30);
+    text-shadow: rgb(0, 0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -170,14 +170,20 @@ main, footer {
 }
 
 .servicios{
+    display: flex;
     color: #021544;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .servicios div{
     padding: 25px;
-    margin: 10px;
+    margin: -120px 30px 150px 30px;
     border-radius: 12px;
     background-color: white;
     box-shadow:5px 5px 15px gray;
@@ -185,12 +191,22 @@ main, footer {
     width: 330px;
 }
 
+.servicios div h3{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.servicios div article{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
 .servicios div a {
     padding: 5px;
     border-radius: 12px;
     background-color:#10BDED;
     text-decoration: none;
-    margin:10px;
     color: white;
     font-weight: bold;
 }
@@ -201,46 +217,60 @@ main, footer {
     margin: 35px;
 }
 
-/* .hosting {
+.carrucel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hosting h2 {
-    margin-bottom: 1rem;
-  }
-  
-  .hosting-content {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-bottom: 30px;
+}
+
+.elem-carr{
     display: flex;
-    flex-direction: row;
+    flex: 1 0 auto;
+    margin: 0px 30px;
+    width: 200px;
+    height: 200px;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+.elem-carr img{
+    width: 114px;
+    height: 114px;
+}
+
+.cont{
+    margin: 30px;
+}
+.hosting{
+    box-shadow:5px 5px 15px gray;
     background-color: #EDECEC;
     padding: 25px;
-    margin: 0% 5%;
     border-radius: 12px;
-    box-shadow:5px 5px 15px gray;
-    width: 90%;
-    height: 461px;
+    text-align: center;
+    margin: 30px;
+}
+
+.hosting h2{
     color: #021544;
+    border-style: none none solid none;
+    border-width: 5px;
+    border-color: #10BDED;
+    display: inline-block;
+    font-weight:bold;
+    font-size: 25px;
+    margin-top: 20px;
+} 
+.hosting p{
+    font-size: 18px;
+}
+.hosting li{
+    font-size: 18px;
 }
 
-.hosting-info {
-    flex-basis: 50%;
-    padding-right: 2rem;
+.hosting-img img{
+    width:25rem ;
+    height: 13rem;
 }
-
-.hosting-img {
-    flex-basis: 50%;
-    padding-left: 2rem;
-}
-
-.hosting-img img {
-    max-width: 100%;
-} */
 
 /********************************************  servicios *****************************************/
 
@@ -340,7 +370,7 @@ main, footer {
     font-weight: bolder;
 }
 
-/********************************************  enpresa *****************************************/
+/********************************************  Proyecto *****************************************/
 .proy-emp{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -358,7 +388,7 @@ main, footer {
     height: 230px;
 }
 
-  /* ***********************************   contacto  ******************************* */
+  /***********************************   contacto  ******************************* */
 
 .backgr-conta{
     margin-top: 0px;
@@ -391,7 +421,7 @@ main, footer {
 }
 
 
-/* ****************  responsive  ************* */
+/* **********************************  responsive  ******************************* */
 @media(max-width: 1200px){
     .pie-pagina .fot-1{
         max-width: 900px;
@@ -504,6 +534,8 @@ main, footer {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        position: absolute;
+        z-index: 9999;
     }
     .nav-bar ul li{
         display: block;
@@ -538,7 +570,45 @@ main, footer {
     .centrado h2 {
         font-size: 20px;
     }
-}
+    .servicios h3{
+        font-size: 22px;
+    }
+    .servicios article{
+        font-size: 16px;
+    }
+    .servicios div{
+        border-radius: 10px;
+        height: 350px;
+        width: 290px;
+        margin: 20px 30px 70px 30px;
+    }
+    .servicios div h3{
+        font-size: 18px;
+    }
+    .servicios div article{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .hosting h2{
+        font-size: 20px;
+        margin-top: 10px;
+    } 
+    .hosting p{
+        font-size: 16px;
+    }
+    .hosting li{
+        font-size: 16px;
+    }
+    .elem-carr{
+        width: 150px;
+        height: 150px;
+
+    }
+    .elem-carr img{
+        width: 80px;
+        height: 80px;
+    }
+}   
 
 @media (max-width: 500px){
     .proy-emp img{
@@ -552,6 +622,18 @@ main, footer {
     .centrado h2 {
         font-size: 18px;
     }
+    .servicios div h3{
+        font-size: 16px;
+    }
+    .servicios div article{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .hosting-img img{
+        width:17rem ;
+        height: 10rem;
+    }
+    
 }
 
 
