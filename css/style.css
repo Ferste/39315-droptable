@@ -24,16 +24,19 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-weight:bold;
 }
+
 .nav-bar{
     height: 100px;
     width: 100%;
 }
+
 .enlace{
     position: absolute;
     padding: 25px 80px;
     color: #021544;
     
 }
+
 .enlace h1{
     position: absolute;
     display: inline-block;
@@ -41,17 +44,20 @@ font-family: 'Poppins', sans-serif;
     font-weight:bold;
     padding: 5px 0px 0px 0px;
 }
+
 .nav-bar ul{
     float: right;
     margin-right: 50px;
     margin-bottom: 0px;
 }
+
 .nav-bar ul li{
     display: inline-block;
     line-height: 100px;
     margin: 0 5px;
     
 }
+
 .nav-bar ul li a{
     color: #021544;
     font-size: 18px;
@@ -59,10 +65,12 @@ font-family: 'Poppins', sans-serif;
     border-radius: 3px;
     text-decoration: none;
 }
+
 li a:hover{
     background:#18beeba7;
     transition: .5s;
 }
+
 .checkbtn{
     font-size: 30px;
     color: #021544;
@@ -72,15 +80,18 @@ li a:hover{
     cursor: pointer;
     display: none;
 }
+
 #check{
     display: none;
 }
+
 /********************************************  footer *****************************************/
 
 .pie-pagina{
     width: 100%;
     background-color: black;
 }
+
 .pie-pagina .fot-1{
     width: 100%;
     max-width: 1200px;
@@ -90,41 +101,50 @@ li a:hover{
     grid-gap: 30px;
     padding: 40px 0px;
 }
+
 .pie-pagina .fot-1 .area h4{
     color: white;
     margin-bottom: 25px;
     font-size: 20px;
     font-weight:bold;
 }
+
 .mapa{
     text-align: center;
 }
+
 .pie-pagina .fot-1 .area p{
     color: white;
 }
+
 .navbar-footer a{
     text-decoration: none;
     color: white;
 }
+
 .navbar-footer{
     padding-left: 0px;
 }
+
 .navbar-footer li{
     margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .redes a{
     display: inline-block;
     margin-right: 15px;
 }
+
 .pie-pagina .fot-2 {
     background-color: rgb(15, 15, 15);
     padding: 15px;
     text-align: center;
     color: white;
 }
+
 .pie-pagina .fot-2 h3{
     font-size: 20px;
 }
@@ -136,9 +156,11 @@ li a:hover{
     position: relative;
     text-align: center;
 } 
+
 .fondo-edificio{
     width: 100%;
 }
+
 .centrado h2 {
     color: white;
     font-weight: bold;
@@ -150,9 +172,11 @@ li a:hover{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
+
 main, footer {
     font-family: 'Poppins', sans-serif;
 }
+
 .servicios{
     display: flex;
     color: #021544;
@@ -164,6 +188,7 @@ main, footer {
     position: relative;
     z-index: 2;
 }
+
 .servicios div{
     padding: 25px;
     margin: -120px 30px 150px 30px;
@@ -173,15 +198,18 @@ main, footer {
     height: 330px;
     width: 330px;
 }
+
 .servicios div h3{
     font-size: 22px;
     font-weight: bolder;
 }
+
 .servicios div article{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 .servicios div a {
     padding: 5px;
     border-radius: 12px;
@@ -190,11 +218,13 @@ main, footer {
     color: white;
     font-weight: bold;
 }
+
 .empresas img{
     height: 114px;
     width: 114px;
     margin: 35px;
 }
+
 .carrucel {
     display: flex;
     flex-wrap: nowrap;
@@ -211,10 +241,12 @@ main, footer {
     align-items: center;
     justify-content: center;
 }
+
 .elem-carr img{
     width: 114px;
     height: 114px;
 }
+
 .cont{
     margin: 30px;
 }
@@ -226,6 +258,7 @@ main, footer {
     text-align: center;
     margin: 30px;
 }
+
 .hosting h2{
     color: #021544;
     border-style: none none solid none;
@@ -236,12 +269,15 @@ main, footer {
     font-size: 25px;
     margin-top: 20px;
 } 
+
 .hosting p{
     font-size: 18px;
 }
+
 .hosting li{
     font-size: 18px;
 }
+
 .hosting-img img{
     width:25rem ;
     height: 13rem;
@@ -257,6 +293,7 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
+
 .consultoria {
     padding: 35px;
     background-color: #C1AEFC;
@@ -264,6 +301,7 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
+
 .marketing-digital {
     padding: 35px;
     background-color:#BEF0CB;
@@ -271,51 +309,61 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
+
 .desarrollo-web .d3{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .desarrollo-web h4{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .desarrollo-web a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
+
 .marketing-digital .d3{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .marketing-digital h4{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .marketing-digital a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
+
 .consultoria .d3{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .consultoria h4{
     color: black;
     font-weight: bolder;
     font-size: 18px;
 }
+
 .consultoria a{
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
+
 /********************************************  enpresa *****************************************/
 
 
@@ -327,11 +375,13 @@ main, footer {
     border-radius: 25px;
     box-shadow:5px 5px 15px gray;
 }
+
 .info-empresa p{
     color: black;
     font-weight: bolder;
     font-size: 16px;
 }
+
 .info-empresa a{
     text-decoration: none;
     color: white;
@@ -345,11 +395,13 @@ main, footer {
     gap: 30px;
     margin: 60px 0px;
 }
+
 .proy-emp a{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .proy-emp img{
     width: 230px;
     height: 230px;
@@ -360,13 +412,16 @@ main, footer {
 .backgr-conta{
     margin-top: 0px;
 }
+
 .fondo-contacto{
     width: 100%;
 }
+
 .formulario {
     text-align: center;
     margin-bottom: 75px;
 }
+
 .formulario h2{
     color: #021544;
     border-style: none none solid none;
@@ -377,6 +432,7 @@ main, footer {
     font-size: 25px;
     margin-top: 55px;
 }
+
 .formulario h3{
     color: #021544;
     font-weight:bold;
@@ -397,6 +453,7 @@ main, footer {
         gap: 20px;
     }
 }
+
 @media (max-width: 1024px){
     .nav-bar ul{
         margin-right: 30px;
@@ -428,6 +485,7 @@ main, footer {
         font-size: 24px;
     }
 }
+
 @media (max-width: 900px){
     .nav-bar ul{
         margin-right: 20px;
@@ -481,6 +539,7 @@ main, footer {
         padding: 30px;
     }
 }
+
 @media (max-width: 768px){
     .checkbtn{
         display: block;
@@ -568,6 +627,7 @@ main, footer {
         height: 80px;
     }
 }   
+
 @media (max-width: 500px){
     .proy-emp img{
         width: 100px;
