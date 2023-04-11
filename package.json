@@ -1,0 +1,19 @@
+{
+  "name": "39315-droptable",
+  "version": "1.0.0",
+  "description": "El proyecto consiste en una pagina web de una empresa dedica al desarrollo web.\r Todas las paginas son responsive en las medidas de width desde 1940px a 320px.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
