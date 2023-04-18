@@ -1,18 +1,19 @@
 
 .pie-pagina{
     width: 100%;
-    background-color: black;
+    background-color:$color-principal-footer;
     .fot-1{
         width: 100%;
         max-width: 1200px;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 30px;
+        @include grid(repeat(3,1fr),none,30px,none,none);
         padding: 40px 0px;
         .area {
+            p{
+                color: $color-font-footer;
+            }
             h4{
-                color: white;
+                color: $color-font-footer;
                 margin-bottom: 25px;
                 font-size: 20px;
                 font-weight:bold;
@@ -20,37 +21,34 @@
             .mapa{
                     text-align: center;
             }    
-            p{
-                color: white;
-            }
             .navbar-footer{
                 padding-left: 0px;
-                a{
-                    text-decoration: none;
-                    color: white;
-                }
                 li{
                     margin-bottom: 12px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(none,none,center,center);
+                    a{
+                        text-decoration: none;
+                        color: $color-font-footer;
+                    }
                 }
             }
-            .redes a{
-                display: inline-block;
-                margin-right: 15px;
+            .redes {
+                a{
+                    display: inline-block;
+                    margin-right: 15px;
+                }
             }
+            
             
         }
     }
     .fot-2 {
-        background-color: rgb(15, 15, 15);
+        background-color:$color-copy-footer;
         padding: 15px;
         text-align: center;
-        color: white;
+        color: $color-font-footer;
         h3{
             font-size: 20px;
         }
     }
-    
 }

@@ -1,0 +1,130 @@
+
+.fondo-index{
+    position: relative;
+    text-align: center;
+    .fondo-edificio{
+        width: 100%;
+    }
+    .centrado h2 {
+        color: white;
+        font-weight: bold;
+        text-shadow: rgb(0, 0, 0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $tipografia-principal;
+        font-size: 30px;
+    }
+} 
+
+.servicios{
+    color: $color-font;
+    width: 100%;
+    @include flex(none,none,center,center);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    article{
+        padding: 25px;
+        margin: -120px 30px 150px 30px;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow:$color-sombras;
+        height: 330px;
+        width: 330px;
+        h3{
+            font-size: 22px;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        a {
+            padding: 5px;
+            border-radius: 12px;
+            background-color:$color-botones;
+            text-decoration: none;
+            color: $color-letras-boton;
+            font-weight: bold;
+        }
+    }
+}
+
+.formulario {
+    text-align: center;
+    margin-bottom: 75px;
+    h2{
+        color:$color-font;
+        border-style: none none solid none;
+        border-width: 5px;
+        border-color: $color-border;
+        display: inline-block;
+        font-weight:bold;
+        font-size: 25px;
+        margin-top: 55px;
+    }    
+}
+
+.carrucel {
+    @include flex(none,nowrap,none,none);
+    overflow-x: scroll;
+    margin-bottom: 30px;
+    .elem-carr {
+        flex: 0 0 auto;
+        margin-right: 30px;
+        width: 200px;
+        height: 200px;
+        @include flex(none,none,center,center);
+        a {
+            img{
+                width: 114px;
+                height: 114px;
+            }
+        }  
+    }
+}
+
+.hosting{
+    box-shadow:$color-sombras;
+    background-color: #EDECEC;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 30px;
+    div {
+        h2{
+            color:$color-font;
+            border-style: none none solid none;
+            border-width: 5px;
+            border-color: $color-border;
+            display: inline-block;
+            font-weight:bold;
+            font-size: 25px;
+            margin-top: 55px;
+        }    
+    } 
+    .hosting-info{
+        p{
+            font-size: 18px ;
+            text-align: left;
+        }
+        ul{
+            text-align: left;
+            li{
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    }
+    .hosting-img{
+        img{
+            width:25rem ;
+            height: 13rem;
+        }
+    }
+}
+
+
