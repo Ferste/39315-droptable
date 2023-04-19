@@ -1,0 +1,22 @@
+
+.info-empresa {
+    color:$color-font;
+    padding: 35px;
+    background-color: #BEF0CB;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:$color-sombras;
+    p{
+        color: black;
+        font-weight: bolder;
+        font-size: 16px;
+    }
+    .btn{
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+    }    
+}
+

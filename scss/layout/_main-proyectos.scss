@@ -1,0 +1,11 @@
+.proy-emp{
+    @include grid(repeat(4,1fr),none,30px,none,none);
+    margin: 60px 0px;
+    a{
+        @include flex(none,none,center,center);
+        img{
+            width: 230px;
+            height: 230px;
+        }
+    }
+}

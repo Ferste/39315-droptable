@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hea-der {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -185,6 +191,118 @@
   height: 13rem;
 }
 
+.desarrollo-web, .marketing-digital, .consultoria {
+  padding: 35px;
+  background-color: #F6F7C1;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px gray;
+}
+.desarrollo-web .d3, .marketing-digital .d3, .consultoria .d3 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.desarrollo-web h4, .marketing-digital h4, .consultoria h4 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.desarrollo-web .btn a, .marketing-digital .btn a, .consultoria .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.consultoria {
+  background-color: #C1AEFC;
+}
+.consultoria .d3 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.consultoria h4 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.consultoria .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.marketing-digital {
+  background-color: #BEF0CB;
+}
+.marketing-digital .d3 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.marketing-digital h4 {
+  color: black;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.marketing-digital .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.proy-emp {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
+  grid-gap: 30px;
+  justify-content: none;
+  align-items: none;
+  margin: 60px 0px;
+}
+.proy-emp a {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+}
+.proy-emp a img {
+  width: 230px;
+  height: 230px;
+}
+
+.info-empresa {
+  color: #021544;
+  padding: 35px;
+  background-color: #BEF0CB;
+  margin: 25px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px gray;
+}
+.info-empresa p {
+  color: black;
+  font-weight: bolder;
+  font-size: 16px;
+}
+.info-empresa .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.backgr-conta .fondo-contacto {
+  width: 100%;
+}
+
+.formulario h3 {
+  color: #021544;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px 10px;
+}
+
 .pie-pagina {
   width: 100%;
   background-color: black;
@@ -240,214 +358,6 @@
 }
 .pie-pagina .fot-2 h3 {
   font-size: 20px;
-}
-
-@media (max-width: 1200px) {
-  .fot-1 {
-    max-width: 900px;
-  }
-  .proy-emp {
-    gap: 20px;
-  }
-  .proy-emp img {
-    width: 180px;
-    height: 180px;
-  }
-}
-@media (max-width: 1024px) {
-  .nav-bar ul {
-    margin-right: 30px;
-  }
-  .nav-bar ul li a {
-    font-size: 16px;
-    padding: 0px 5px;
-  }
-  .nav-bar .enlace {
-    padding-left: 30px;
-  }
-  .centrado h2 {
-    font-size: 25px;
-  }
-  .formulario h3 {
-    font-size: 18px;
-  }
-  .formulario h2 {
-    font-size: 23px;
-  }
-  .pie-pagina .fot-1 {
-    max-width: 900px;
-  }
-  .proy-emp img {
-    width: 150px;
-    height: 150px;
-  }
-  .centrado h2 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 900px) {
-  .nav-bar ul {
-    margin-right: 20px;
-  }
-  .enlace {
-    padding-left: 20px;
-  }
-  .centrado h2 {
-    font-size: 20px;
-  }
-  .formulario h3 {
-    font-size: 16px;
-  }
-  .formulario h2 {
-    font-size: 20px;
-  }
-  .pie-pagina .fot-1 {
-    max-width: 800px;
-  }
-  .redes a {
-    margin-right: 5px;
-  }
-  .desarrollo-web .d3 {
-    font-size: 16px;
-  }
-  .desarrollo-web h4 {
-    font-size: 16px;
-  }
-  .desarrollo-web p {
-    font-size: 14px;
-  }
-  .marketing-digital .d3 {
-    font-size: 16px;
-  }
-  .marketing-digital h4 {
-    font-size: 16px;
-  }
-  .marketing-digital p {
-    font-size: 14px;
-  }
-  .consultoria .d3 {
-    font-size: 16px;
-  }
-  .consultoria h4 {
-    font-size: 16px;
-  }
-  .consultoria p {
-    font-size: 14px;
-  }
-  .info-empresa {
-    padding: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .checkbtn {
-    display: block;
-  }
-  .nav-bar ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #EDECEC;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    position: absolute;
-    z-index: 9999;
-  }
-  .nav-bar ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  .nav-bar ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  .pie-pagina .fot-1 {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 30px 0px;
-  }
-  .pie-pagina .fot-1 .area {
-    text-align: center;
-    align-items: center;
-  }
-  .info-empresa {
-    padding: 20px;
-  }
-  .proy-emp img {
-    width: 200px;
-    height: 200px;
-  }
-  .proy-emp {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  .centrado h2 {
-    font-size: 20px;
-  }
-  .servicios h3 {
-    font-size: 22px;
-  }
-  .servicios article {
-    font-size: 16px;
-  }
-  .servicios div {
-    border-radius: 10px;
-    height: 350px;
-    width: 290px;
-    margin: 20px 30px 70px 30px;
-  }
-  .servicios div h3 {
-    font-size: 18px;
-  }
-  .servicios div article {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  .hosting h2 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  .hosting p {
-    font-size: 16px;
-  }
-  .hosting li {
-    font-size: 16px;
-  }
-  .elem-carr {
-    width: 150px;
-    height: 150px;
-  }
-  .elem-carr img {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 500px) {
-  .proy-emp img {
-    width: 100px;
-    height: 100px;
-  }
-  .proy-emp {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-  .centrado h2 {
-    font-size: 18px;
-  }
-  .servicios div h3 {
-    font-size: 16px;
-  }
-  .servicios div article {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  .hosting-img img {
-    width: 17rem;
-    height: 10rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+
+.desarrollo-web {
+    padding: 35px;
+    background-color: #F6F7C1;
+    margin: 25px;
+    border-radius: 25px;
+    box-shadow:$color-sombras;
+    .d3{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    h4{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .btn{
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+    }    
+}
+
+
+.consultoria {
+    @extend .desarrollo-web;
+    background-color: #C1AEFC;
+    .d3{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    h4{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .btn{
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+    } 
+    
+}
+
+.marketing-digital {
+    @extend .desarrollo-web;
+    background-color:#BEF0CB;
+    .d3{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    h4{
+        color: black;
+        font-weight: bolder;
+        font-size: 18px;
+    }
+    .btn{
+        a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+    } 
+}
+
