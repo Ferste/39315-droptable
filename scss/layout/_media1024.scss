@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+    .hea-der{
+        .nav-bar{
+            ul{
+                margin-right: 30px;
+                li {
+                    font-size: 16px;
+                    a {
+                        padding: 0px 5px;
+                    }
+                }
+            }
+            .enlace {
+                padding-left: 30px;
+            }  
+        }
+    }
+    .fondo-index{
+            .centrado {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    .formulario {
+        h3{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 23px;
+        }
+    }    
+    .pie-pagina {
+        .fot-1 {
+                max-width: 900px;
+        }
+    }
+    .proy-emp {
+        a{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
