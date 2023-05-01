@@ -103,12 +103,10 @@
     }
     .carrucel{
         .elem-carr {
-            width: 150px;
-            height: 150px;
-            a img{
-                width: 80px;
-                height: 80px;
-            }
+            max-width: 120px;
+            min-width: 120px;
+            height: 120px;
+            margin-left: 15px;
         }
     }
 }

@@ -134,27 +134,24 @@
 
 .carrucel {
   display: flex;
-  flex-direction: none;
-  flex-wrap: nowrap;
-  justify-content: none;
-  align-items: none;
-  overflow-x: scroll;
-  margin-bottom: 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
 }
 .carrucel .elem-carr {
-  flex: 0 0 auto;
-  margin-right: 30px;
-  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
   height: 200px;
-  display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  justify-content: center;
-  align-items: center;
+  margin-left: 30px;
 }
 .carrucel .elem-carr a img {
-  width: 114px;
-  height: 114px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elem-carr:hover {
+  transform: scale(1.2);
 }
 
 .hosting {
@@ -512,12 +509,10 @@
     height: auto;
   }
   .carrucel .elem-carr {
-    width: 150px;
-    height: 150px;
-  }
-  .carrucel .elem-carr a img {
-    width: 80px;
-    height: 80px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    margin-left: 15px;
   }
 }
 @media (max-width: 500px) {
